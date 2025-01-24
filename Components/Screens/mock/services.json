@@ -1,0 +1,6 @@
+[
+  { "name": "Cash In", "icon": "arrow-up","route":"CashInScreen" },
+  { "name": "Cash Out", "icon": "arrow-down", "route":"CashOutScreen" },
+  { "name": "mobile prepaid", "icon": "mobile-alt", "route":"" },
+  { "name": "electricity bill", "icon": "lightbulb", "route":"" }
+]

@@ -1,28 +1,31 @@
 {
   "expo": {
-    "name": "AgentPay",
-    "slug": "AgentPay",
+    "name": "Agent Pay",
+    "slug": "agentpay",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "09be6294-5301-4aa6-9289-4261b4d3f2a1"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "android": {
+      "package": "com.NnovaTechnologies.AgentPay"
+    },
+    "plugins": [
+      "expo-barcode-scanner",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ]
   }
 }
